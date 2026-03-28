@@ -79,7 +79,7 @@ Le dataset utilisé contient des informations sur :
 ![Confusion Matrix](images/confusion_matrix.png)
 
 #### 📌 Courbe ROC
-![ROC Curve](images/roc_curve.png)
+![ROC Curve](roc_curve.png)
 
 ---
 
@@ -91,10 +91,10 @@ Utilisation de SQL pour extraire des insights business :
 - Analyse par revenu, âge et statut de logement
 
 #### 📌 Clients les plus à risque
-![High Risk](images/sql_high_risk.png)
+![High Risk](sql_high_risk.png)
 
 #### 📌 Clients les moins à risque
-![Low Risk](images/sql_low_risk.png)
+![Low Risk](sql_low_risk.png)
 
 ---
 
@@ -108,7 +108,7 @@ Création d’un dashboard interactif permettant de visualiser :
 - le taux de défaut par niveau de crédit
 
 #### 📊 Aperçu du dashboard
-![Dashboard](images/dashboard.png)
+![Dashboard](dashboard.png)
 
 ---
 
