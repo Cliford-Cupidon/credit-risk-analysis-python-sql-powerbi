@@ -1,4 +1,4 @@
-# 📊 Credit Risk Analysis – Python, SQL & Power BI
+# 📊 Credit Risk Analysis | Python . SQL . Power BI
 
 ---
 
@@ -169,11 +169,11 @@ Utilisation de SQL pour extraire des insights business :
 - Identification des profils les plus risqués
 - Analyse par revenu, âge et statut de logement
 
-👉Résultat clé :
-Les clients à **faible revenu** et **locataires (RENT)** présentent le plus haut risque.
-
 #### 📌 Clients les plus à risque
 ![High Risk](sql_high_risk.png)
+
+👉Résultat clé :
+Les clients à **faible revenu** et **locataires (RENT)** présentent le plus haut risque.
 
 #### 📌 Clients les moins à risque
 ![Low Risk](sql_low_risk.png)
