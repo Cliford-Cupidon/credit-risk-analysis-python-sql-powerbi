@@ -160,7 +160,7 @@ Afin d’améliorer les performances :
 ## 📈 Évaluation du modèle
 
 #### 📌 Matrice de confusion
-![Confusion Matrix](images/confusion_matrix.png)
+![Confusion Matrix](confusion_matrix.png)
 
 #### 📌 Courbe ROC
 ![ROC Curve](roc_curve.png)
