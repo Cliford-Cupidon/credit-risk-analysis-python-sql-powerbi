@@ -43,7 +43,8 @@ Le dataset contient des informations sur :
 
 👉 Variable cible :
 - 'loan_status'
- (0 = non défaut, 1 = défaut)
+
+(0 = non défaut, 1 = défaut)
 
 ---
 ⚠️ Le fichier étant trop volumineux, il n’est pas inclus dans ce repository.
@@ -199,7 +200,8 @@ Un dashboard interactif a été développé pour faciliter l’analyse du risque
 #### 📊 Aperçu du dashboard
 ![Dashboard](dashboard.png)
 
-- 👉Ce dashboard permet aux équipes crédit d’identifier rapidement les segments à risque et d’adapter leurs décisions.
+👉Ce dashboard permet aux équipes crédit d’identifier rapidement les segments à risque et d’adapter leurs décisions.
+
 ---
 ## 🏦 Cas d’usage
 
