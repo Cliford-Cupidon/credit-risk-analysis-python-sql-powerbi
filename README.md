@@ -8,7 +8,7 @@ Ce projet vise à analyser le **risque de crédit des clients** afin d’identif
 
 L’objectif est de transformer des données brutes en **insights exploitables** pour aider à la prise de décision dans un contexte financier.
 
-Dans le secteur financier, une mauvaise évaluation du risque peut entraîner des pertes importantes. Il est donc essentiel d’identifier les profils à risque avant d’accorder un prêt.
+Dans le secteur financier, une mauvaise évaluation du risque peut entraîner des pertes importantes. Il est donc essentiel d’identifier les profils à risque avant l'octroi un prêt.
 
 Le projet combine trois outils principaux :
 
@@ -27,13 +27,13 @@ Le projet combine trois outils principaux :
 
 ---
 
-👉 Problématique :
+👉 **Problématique :**
 **Comment détecter efficacement les clients susceptibles de faire défaut ?**
 
 ---
 ## 📂 Dataset & Source des données
 
-Le dataset utilisé contient des informations sur :
+Le dataset contient des informations sur :
 
 - les revenus des clients
 - leur âge
@@ -42,7 +42,8 @@ Le dataset utilisé contient des informations sur :
 - le statut de défaut
 
 👉 Variable cible :
-- `loan_status` (0 = non défaut, 1 = défaut)
+- 'loan_status'
+ (0 = non défaut, 1 = défaut)
 
 ---
 ⚠️ Le fichier étant trop volumineux, il n’est pas inclus dans ce repository.
@@ -65,17 +66,9 @@ Le dataset utilisé contient des informations sur :
 
 Chaque outil joue un rôle complémentaire dans le projet :
 
-- **Python**
-→ nettoyage des données, transformation et modélisation
-→ construction du modèle prédictif
-
-- **SQL**
-→ exploration rapide des données
-→ identification des tendances et profils à risque
-
-- **Power BI**
-→ visualisation claire et interactive
-→ support à la prise de décision
+- **Python** → nettoyage des données, transformation et modélisation
+- **SQL** → exploration rapide et identification des segments à risque
+- **Power BI** → visualisation claire et interactive pour la prise de décision
 
 👉 Ensemble, ces outils couvrent toute la chaîne :
 **data → analyse → prédiction → visualisation → décision**
@@ -98,7 +91,6 @@ Credit_Risk_Analysis/
 ## 🔄 Étapes du projet
 
 ### 1. Nettoyage & préparation des données (Python)
-Cette étape est essentielle pour garantir la qualité des résultats :
 
 - gestion des valeurs manquantes
 - suppression des doublons
@@ -176,6 +168,9 @@ Utilisation de SQL pour extraire des insights business :
 - Identification des profils les plus risqués
 - Analyse par revenu, âge et statut de logement
 
+👉Résultat clé :
+Les clients à **faible revenu** et **locataires (RENT)** présentent le plus haut risque.
+
 #### 📌 Clients les plus à risque
 ![High Risk](sql_high_risk.png)
 
@@ -204,6 +199,20 @@ Un dashboard interactif a été développé pour faciliter l’analyse du risque
 #### 📊 Aperçu du dashboard
 ![Dashboard](dashboard.png)
 
+👉 Ce dashboard permet aux équipes crédit d’identifier rapidement les segments à risque et d’adapter leurs décisions.
+---
+## 🏦 Cas d’usage
+
+Ce projet peut être utilisé par une institution financière pour :
+
+- automatiser l’évaluation du risque client  
+
+- réduire les défauts de paiement  
+
+- améliorer la rentabilité du portefeuille de crédit  
+
+- optimiser les décisions d’octroi de prêts  
+
 ---
 
 ## 💡 Insights clés
@@ -215,12 +224,12 @@ Un dashboard interactif a été développé pour faciliter l’analyse du risque
 
 ---
 
-## 📈 Résultats principaux
+## 📊 Résultats principaux
 
-- Les clients à **faible revenu** présentent le risque le plus élevé
-- Les **locataires (RENT)** sont plus exposés au défaut
-- Certains groupes d’âge (jeunes adultes) sont plus risqués
-- Le modèle atteint une **AUC ≈ 0.82**, indiquant une bonne performance globale
+- Les clients à faible revenu présentent le risque le plus élevé  
+- Les locataires (RENT) sont plus exposés au défaut  
+- Le modèle atteint une AUC ≈ 0.82  
+- Amélioration significative du recall (détection des défauts)
 
 ---
 
@@ -241,18 +250,21 @@ Ce projet permet :
 - Améliorer la gestion du déséquilibre des classes
 - Déployer le modèle (API ou application)
 
+👉 Il transforme des données brutes en **outil d’aide à la décision stratégique**
+
 ---
 
-## 🏁 Conclusion
+# 🏁 Conclusion
 
 Ce projet démontre l’importance de l’analyse de données dans la gestion du risque de crédit.
 
-Le modèle développé permet d’identifier efficacement les clients à risque, tout en mettant en évidence les facteurs clés influençant le défaut.
+Le modèle développé permet d’identifier efficacement les clients à risque tout en mettant en évidence les facteurs clés influençant le défaut.
 
-Le dashboard Power BI permet une **visualisation claire et interactive**, facilitant la prise de décision.
+Le dashboard Power BI offre une **visualisation claire et interactive**, facilitant la prise de décision.
+
+👉 Ce projet illustre comment la data peut transformer un processus critique en finance en un système analytique performant.
 
 
----
 
 ## 👤 Auteur
 
