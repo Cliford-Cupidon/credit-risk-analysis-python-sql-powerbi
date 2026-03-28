@@ -8,7 +8,7 @@ Ce projet vise à analyser le **risque de crédit des clients** afin d’identif
 
 L’objectif est de transformer des données brutes en **insights exploitables** pour aider à la prise de décision dans un contexte financier.
 
-Dans le secteur financier, une mauvaise évaluation du risque peut entraîner des pertes importantes. Il est donc essentiel d’identifier les profils à risque avant l'octroi un prêt.
+Dans le secteur financier, une mauvaise évaluation du risque peut entraîner des pertes importantes. Il est donc essentiel d’identifier les profils à risque avant l'octroi d'un prêt.
 
 Le projet combine trois outils principaux :
 
