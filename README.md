@@ -8,6 +8,8 @@ Ce projet vise à analyser le **risque de crédit des clients** afin d’identif
 
 L’objectif est de transformer des données brutes en **insights exploitables** pour aider à la prise de décision dans un contexte financier.
 
+Dans le secteur financier, une mauvaise évaluation du risque peut entraîner des pertes importantes. Il est donc essentiel d’identifier les profils à risque avant d’accorder un prêt.
+
 Le projet combine trois outils principaux :
 
 - **Python** → nettoyage, analyse exploratoire et modélisation
@@ -25,6 +27,10 @@ Le projet combine trois outils principaux :
 
 ---
 
+👉 Problématique :
+**Comment détecter efficacement les clients susceptibles de faire défaut ?**
+
+---
 ## 📂 Dataset & Source des données
 
 Le dataset utilisé contient des informations sur :
@@ -33,8 +39,12 @@ Le dataset utilisé contient des informations sur :
 - leur âge
 - leur statut de logement
 - les caractéristiques du prêt
-- le statut de défaut (target)
+- le statut de défaut
 
+👉 Variable cible :
+- `loan_status` (0 = non défaut, 1 = défaut)
+
+---
 ⚠️ Le fichier étant trop volumineux, il n’est pas inclus dans ce repository.
 
 👉 Vous pouvez utiliser un dataset similaire sur :
@@ -51,13 +61,54 @@ Le dataset utilisé contient des informations sur :
 
 ---
 
+## 🧠 Importance des outils utilisés
+
+Chaque outil joue un rôle complémentaire dans le projet :
+
+- **Python**
+→ nettoyage des données, transformation et modélisation
+→ construction du modèle prédictif
+
+- **SQL**
+→ exploration rapide des données
+→ identification des tendances et profils à risque
+
+- **Power BI**
+→ visualisation claire et interactive
+→ support à la prise de décision
+
+👉 Ensemble, ces outils couvrent toute la chaîne :
+**data → analyse → prédiction → visualisation → décision**
+
+---
+## 📁 Structure du projet
+
+```
+Credit_Risk_Analysis/
+│── data/
+│── notebook/
+│── sql/
+│── power_bi/
+│── images/
+│── clean_credit_risk.csv
+```
+
+---
+
 ## 🔄 Étapes du projet
 
 ### 1. Nettoyage & préparation des données (Python)
+Cette étape est essentielle pour garantir la qualité des résultats :
 
-- Gestion des valeurs manquantes
-- Transformation des variables
-- Création de nouvelles features (income group, age group…)
+- gestion des valeurs manquantes
+- suppression des doublons
+- traitement des données
+- création de nouvelles variables
+
+Variables créées :
+- `income_group`
+- `age_group`
+- `debt_to_income`
 
 ---
 
@@ -71,15 +122,50 @@ Le dataset utilisé contient des informations sur :
 
 ### 3. Modélisation (Machine Learning)
 
-- Entraînement d’un modèle de classification
-- Ajustement du seuil de décision
-- Optimisation du recall pour détecter les clients à risque
+Modèle utilisé : **Régression logistique**
+
+#### Étapes :
+- séparation des données (train/test)
+- entraînement du modèle
+- prédiction
+- évaluation
+
+---
+
+## ⚠️ Problème du modèle initial
+
+- Accuracy ≈ 83%
+- Recall ≈ 38%
+
+👉 Le modèle ne détecte pas correctement les clients à risque
+➡️ 62% des défauts ne sont pas identifiés
+
+---
+
+## 🔧 Amélioration du modèle
+
+Afin d’améliorer les performances :
+
+- gestion du déséquilibre des classes
+- utilisation des probabilités
+- ajustement du seuil de décision
+
+👉 Résultat :
+
+- Recall ≈ 89%
+- meilleure détection des défauts
+
+---
+
+## 📈 Évaluation du modèle
 
 #### 📌 Matrice de confusion
 ![Confusion Matrix](images/confusion_matrix.png)
 
 #### 📌 Courbe ROC
 ![ROC Curve](roc_curve.png)
+
+👉 AUC = 0.82 → bonne capacité du modèle à distinguer les classes
 
 ---
 
@@ -100,15 +186,32 @@ Utilisation de SQL pour extraire des insights business :
 
 ### 5. Dashboard Power BI
 
-Création d’un dashboard interactif permettant de visualiser :
+Un dashboard interactif a été développé pour faciliter l’analyse du risque.
+
+### Il permet de visualiser :
 
 - le taux de défaut par âge
 - le taux de défaut par revenu
-- le taux de défaut par type de logement
-- le taux de défaut par niveau de crédit
+- le taux de défaut par statut de logement
+- le taux de défaut par grade
+
+🎨 Code couleur :
+
+- 🔴 Risque élevé
+- 🟠 Risque moyen
+- 🟢 Faible risque
 
 #### 📊 Aperçu du dashboard
 ![Dashboard](dashboard.png)
+
+---
+
+## 💡 Insights clés
+
+- Le revenu est le facteur principal du risque
+- Les locataires présentent un risque élevé
+- Le grade du prêt est fortement corrélé au défaut
+- Certains groupes d’âge sont plus exposés
 
 ---
 
@@ -121,14 +224,22 @@ Création d’un dashboard interactif permettant de visualiser :
 
 ---
 
-## 🧠 Importance des outils utilisés
+## 💼 Impact métier
 
-- **Python** permet une analyse approfondie et la création de modèles prédictifs
-- **SQL** facilite l’extraction rapide d’insights business
-- **Power BI** rend les résultats accessibles et exploitables pour les décideurs
+Ce projet permet :
 
-👉 La combinaison de ces outils permet une approche complète :
-**Data → Analyse → Modélisation → Visualisation**
+- de mieux détecter les clients à risque
+- de réduire les pertes financières
+- d’améliorer les décisions de crédit
+
+---
+
+## 🚀 Améliorations possibles
+
+- Tester des modèles plus performants (Random Forest, XGBoost)
+- Optimiser les hyperparamètres
+- Améliorer la gestion du déséquilibre des classes
+- Déployer le modèle (API ou application)
 
 ---
 
@@ -140,28 +251,6 @@ Le modèle développé permet d’identifier efficacement les clients à risque,
 
 Le dashboard Power BI permet une **visualisation claire et interactive**, facilitant la prise de décision.
 
----
-
-## 📁 Structure du projet
-
-```
-Credit_Risk_Analysis/
-│── data/
-│── notebook/
-│── sql/
-│── power_bi/
-│── images/
-│── clean_credit_risk.csv
-```
-
----
-
-## 🚀 Améliorations possibles
-
-- Tester des modèles plus performants (Random Forest, XGBoost)
-- Optimiser les hyperparamètres
-- Améliorer la gestion du déséquilibre des classes
-- Déployer le modèle (API ou application)
 
 ---
 
