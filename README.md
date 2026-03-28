@@ -199,7 +199,7 @@ Un dashboard interactif a été développé pour faciliter l’analyse du risque
 #### 📊 Aperçu du dashboard
 ![Dashboard](dashboard.png)
 
- 👉 Ce dashboard permet aux équipes crédit d’identifier rapidement les segments à risque et d’adapter leurs décisions.
+  👉 Ce dashboard permet aux équipes crédit d’identifier rapidement les segments à risque et d’adapter leurs décisions.
 ---
 ## 🏦 Cas d’usage
 
