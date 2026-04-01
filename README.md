@@ -235,6 +235,21 @@ Ce projet peut être utilisé par une institution financière pour :
 
 ---
 
+## 💼 Solutions proposées
+
+- Renforcer les critères pour les clients à faible revenu  
+
+- Surveiller davantage les profils locataires  
+
+- Adapter les taux selon le niveau de risque  
+
+- Mettre en place un scoring automatique  
+
+- Cibler les profils à faible risque pour offres premium  
+
+👉 Ces actions permettent de réduire le risque et d’optimiser la prise de décision.
+
+---
 ## 💼 Impact métier
 
 Ce projet permet :
