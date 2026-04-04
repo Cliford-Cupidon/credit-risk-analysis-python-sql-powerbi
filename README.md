@@ -193,9 +193,9 @@ Un dashboard interactif a été développé pour faciliter l’analyse du risque
 
 🎨 Code couleur :
 
-- 🔴 Risque élevé
-- 🟠 Risque moyen
-- 🟢 Faible risque
+- 🔴= Risque élevé
+- 🟠= Risque moyen
+- 🟢= Faible risque
 
 #### 📊 Aperçu du dashboard
 ![Dashboard](dashboard.png)
