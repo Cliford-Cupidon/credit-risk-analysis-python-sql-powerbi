@@ -50,7 +50,7 @@ Le dataset contient des informations sur :
 ⚠️ Le fichier étant trop volumineux, il n’est pas inclus dans ce repository.
 
 👉 Vous pouvez utiliser un dataset similaire sur :
-- Kaggle (Credit Risk / Loan Prediction datasets)
+https://www.kaggle.com/datasets/laotse/credit-risk-dataset 
 
 ---
 
