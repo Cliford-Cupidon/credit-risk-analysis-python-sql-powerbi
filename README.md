@@ -79,12 +79,13 @@ Chaque outil joue un rôle complémentaire dans le projet :
 
 ```
 Credit_Risk_Analysis/
-│── data/
-│── notebook/
-│── sql/
-│── power_bi/
-│── images/
-│── clean_credit_risk.csv
+│--- data/
+│--- notebook/
+│--- sql/
+│--- power_bi/
+│--- images/
+│--- clean_credit_risk.csv
+
 ```
 
 ---
