@@ -100,9 +100,9 @@ Credit_Risk_Analysis/
 - création de nouvelles variables
 
 Variables créées :
-- `income_group`
-- `age_group`
-- `debt_to_income`
+- income_group
+- age_group
+- debt_to_income
 
 ---
 
