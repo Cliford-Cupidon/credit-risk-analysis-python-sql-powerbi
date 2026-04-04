@@ -12,9 +12,9 @@ Dans le secteur financier, une mauvaise évaluation du risque peut entraîner de
 
 Le projet combine trois outils principaux :
 
-- **Python** → nettoyage, analyse exploratoire et modélisation
-- **SQL** → extraction d’insights et segmentation des clients
-- **Power BI** → création d’un dashboard interactif
+- **Python** : nettoyage, analyse exploratoire et modélisation
+- **SQL** : extraction d’insights et segmentation des clients
+- **Power BI** : création d’un dashboard interactif
 
 ---
 
