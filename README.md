@@ -46,9 +46,11 @@ Le dataset contient des informations sur :
 
 (0 = non défaut, 1 = défaut)
 
----
+## Source du dataset
 
-Dataset original :https://www.kaggle.com/datasets/laotse/credit-risk-dataset 
+Dataset original :
+
+https://www.kaggle.com/datasets/laotse/credit-risk-dataset
 
 ⚠️ Le dataset brut n’est pas inclus dans ce repository en raison de sa taille.
 
